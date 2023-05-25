@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=»stylesheet» href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Mi Presupuesto</title>
+</head>
+<body onload="eventosApp()">
+
+   <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <br>
+                <h1 class="tituloApp">Mi Presupuesto</h1>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+               <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-10 boxPresupuesto billete">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="boxPresupuesto" class="form-label">Ingresa tu presupuesto:</label>
+                                              <input type="text" class="form-control" id="boxPresupuesto" aria-describedby="boxAyudaPresupuesto">
+                                              <div id="boxAyudaPresupuesto" class="form-text">Ingresa un presupuesto que no sea un número negativo</div>
+                                            </div>
+                                            <button id="btnEnviar" type="button" class="btn btn-outline-info">Ingresar</button>
+                                        </form>
+                                        <br>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-12 boxGasto">
+                                        <form>
+                                            <div class="mb-3">
+                                              <label for="boxGasto" class="form-label">Ingresa el Nombre del Gasto:</label>
+                                              <input type="text" class="form-control" id="boxGasto" aria-describedby="boxAyudaNombreGasto">
+                                              <div id="boxAyudaNombreGasto" class="form-text">Ingresa un nombre del gasto</div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label for="boxCantidadGasto" class="form-label">Ingresa la cantidad del Gasto:</label>
+                                                <input type="text" class="form-control" id="boxCantidadGasto" aria-describedby="boxAyudaCantidadGasto">
+                                                <div id="boxAyudaCantidadGasto" class="form-text">Ingresa una cantidad de gasto que no sea un número negativo</div>
+                                              </div>
+
+                                            <button id="btnSumarGasto" type="button" class="btn btn-outline-secondary">Añadir Gasto</button>
+                                          </form>
+                                          <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12 boxSaldo">
+                                        <div class="container">
+                                         
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p>Presupuesto</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>Gastos</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>Saldo</p>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <p id="txtPresupuesto"></p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="txtGasto"></p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="txtSaldo"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 boxGastosDetallados">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>Gasto</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p>Valor</p>
+                                                </div>
+
+                                                <div class="col-md-2">
+                                                    <p>Borrar</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p id="txtNombreGasto"></p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p id="txtCostoGasto"></p>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <p id="boxBorrar"></p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </div> 
+            </div>
+        </div>
+   </div>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/de8c9f5df0.js" crossorigin="anonymous"></script>
+</body>
+</html>
